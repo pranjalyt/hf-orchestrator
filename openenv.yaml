@@ -1,0 +1,37 @@
+name: hf-hub-orchestrator
+version: 1.0.0
+description: >
+  RL environment where an agent learns to orchestrate ML pipelines by navigating
+  the HuggingFace ecosystem through specialist agents under hardware constraints
+  and ecosystem chaos.
+author: YourName
+tasks:
+  - name: easy_model_search
+    description: Find pre-trained model for simple NLP task
+    difficulty: easy
+  - name: medium_pipeline_build
+    description: Build and configure full training pipeline
+    difficulty: medium
+  - name: hard_constrained_deployment
+    description: Build production pipeline under hardware constraints with API failures
+    difficulty: hard
+action_space:
+  type: discrete
+  actions:
+    - call_search_agent
+    - call_quality_agent
+    - call_config_agent
+    - call_eval_agent
+    - wait_and_retry
+    - abort_pipeline
+observation_space:
+  type: dict
+  fields:
+    - task_description
+    - target_hardware
+    - priority
+    - available_agents
+    - conversation_history
+    - current_artifacts
+    - steps_used
+reward_range: [ -2, 1.5 ]

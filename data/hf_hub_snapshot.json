@@ -1,0 +1,7071 @@
+{
+  "text-classification": [
+    {
+      "id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "task": "text-classification",
+      "downloads": 25054217,
+      "likes": 221,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "BAAI/bge-reranker-v2-m3",
+      "task": "text-classification",
+      "downloads": 7677079,
+      "likes": 960,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ProsusAI/finbert",
+      "task": "text-classification",
+      "downloads": 4995001,
+      "likes": 1139,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "task": "text-classification",
+      "downloads": 3440518,
+      "likes": 788,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      "task": "text-classification",
+      "downloads": 3244239,
+      "likes": 891,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "facebook/bart-large-mnli",
+      "task": "text-classification",
+      "downloads": 2776953,
+      "likes": 1560,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "BAAI/bge-reranker-base",
+      "task": "text-classification",
+      "downloads": 2673029,
+      "likes": 232,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "daekeun-ml/koelectra-small-v3-nsmc",
+      "task": "text-classification",
+      "downloads": 2244448,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "cross-encoder/ms-marco-MiniLM-L4-v2",
+      "task": "text-classification",
+      "downloads": 2129175,
+      "likes": 14,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/ms-marco-MiniLM-L12-v2",
+      "task": "text-classification",
+      "downloads": 1511347,
+      "likes": 104,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "lucas-leme/FinBERT-PT-BR",
+      "task": "text-classification",
+      "downloads": 1287988,
+      "likes": 29,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "jinaai/jina-reranker-v2-base-multilingual",
+      "task": "text-classification",
+      "downloads": 1204282,
+      "likes": 349,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "trl-internal-testing/tiny-Qwen2ForSequenceClassification-2.5",
+      "task": "text-classification",
+      "downloads": 1160281,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "nlptown/bert-base-multilingual-uncased-sentiment",
+      "task": "text-classification",
+      "downloads": 1146369,
+      "likes": 473,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Alibaba-NLP/gte-reranker-modernbert-base",
+      "task": "text-classification",
+      "downloads": 1129580,
+      "likes": 91,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+      "task": "text-classification",
+      "downloads": 1127641,
+      "likes": 256,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "farbodtavakkoli/OTel-Reranker-0.6B",
+      "task": "text-classification",
+      "downloads": 1060203,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "yiyanghkust/finbert-tone",
+      "task": "text-classification",
+      "downloads": 1058820,
+      "likes": 216,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/ms-marco-MiniLM-L2-v2",
+      "task": "text-classification",
+      "downloads": 1028310,
+      "likes": 14,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "openai-community/roberta-base-openai-detector",
+      "task": "text-classification",
+      "downloads": 907718,
+      "likes": 132,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mixedbread-ai/mxbai-rerank-xsmall-v1",
+      "task": "text-classification",
+      "downloads": 882247,
+      "likes": 56,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "mixedbread-ai/mxbai-rerank-base-v1",
+      "task": "text-classification",
+      "downloads": 823745,
+      "likes": 46,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "BAAI/bge-reranker-large",
+      "task": "text-classification",
+      "downloads": 788024,
+      "likes": 455,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "tabularisai/multilingual-sentiment-analysis",
+      "task": "text-classification",
+      "downloads": 752176,
+      "likes": 365,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "bhadresh-savani/distilbert-base-uncased-emotion",
+      "task": "text-classification",
+      "downloads": 736528,
+      "likes": 160,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cardiffnlp/twitter-roberta-base-sentiment",
+      "task": "text-classification",
+      "downloads": 710783,
+      "likes": 335,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "j-hartmann/emotion-english-distilroberta-base",
+      "task": "text-classification",
+      "downloads": 691236,
+      "likes": 489,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "TrustSafeAI/RADAR-Vicuna-7B",
+      "task": "text-classification",
+      "downloads": 688148,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "task": "text-classification",
+      "downloads": 664687,
+      "likes": 73,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+      "task": "text-classification",
+      "downloads": 646231,
+      "likes": 311,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "microsoft/deberta-xlarge-mnli",
+      "task": "text-classification",
+      "downloads": 586026,
+      "likes": 22,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "microsoft/deberta-large-mnli",
+      "task": "text-classification",
+      "downloads": 508035,
+      "likes": 31,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "papluca/xlm-roberta-base-language-detection",
+      "task": "text-classification",
+      "downloads": 502868,
+      "likes": 375,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "livekit/turn-detector",
+      "task": "text-classification",
+      "downloads": 426550,
+      "likes": 99,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "typeform/distilbert-base-uncased-mnli",
+      "task": "text-classification",
+      "downloads": 416648,
+      "likes": 44,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "pysentimiento/robertuito-sentiment-analysis",
+      "task": "text-classification",
+      "downloads": 404596,
+      "likes": 97,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/ms-marco-TinyBERT-L2-v2",
+      "task": "text-classification",
+      "downloads": 402701,
+      "likes": 44,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "protectai/deberta-v3-base-prompt-injection-v2",
+      "task": "text-classification",
+      "downloads": 401416,
+      "likes": 106,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "FacebookAI/roberta-large-mnli",
+      "task": "text-classification",
+      "downloads": 361205,
+      "likes": 210,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+      "task": "text-classification",
+      "downloads": 341205,
+      "likes": 358,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "facebook/roberta-hate-speech-dynabench-r4-target",
+      "task": "text-classification",
+      "downloads": 337693,
+      "likes": 98,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "finiteautomata/beto-sentiment-analysis",
+      "task": "text-classification",
+      "downloads": 326137,
+      "likes": 35,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0",
+      "task": "text-classification",
+      "downloads": 316070,
+      "likes": 125,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "E-MIMIC/inclusively-classification",
+      "task": "text-classification",
+      "downloads": 294358,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
+      "task": "text-classification",
+      "downloads": 293648,
+      "likes": 31,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cybersectony/phishing-email-detection-distilbert_v2.4.1",
+      "task": "text-classification",
+      "downloads": 293633,
+      "likes": 24,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "jason9693/Qwen2.5-1.5B-apeach",
+      "task": "text-classification",
+      "downloads": 276483,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.5,
+      "estimated_vram_gb": 3.0
+    },
+    {
+      "id": "mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis",
+      "task": "text-classification",
+      "downloads": 276295,
+      "likes": 453,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "hkunlp/instructor-large",
+      "task": "text-classification",
+      "downloads": 276248,
+      "likes": 524,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "unitary/toxic-bert",
+      "task": "text-classification",
+      "downloads": 270679,
+      "likes": 221,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "prithivMLmods/Spam-Bert-Uncased",
+      "task": "text-classification",
+      "downloads": 269575,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "boboliu/Qwen3-Reranker-4B-W4A16-G128",
+      "task": "text-classification",
+      "downloads": 259746,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "s-nlp/roberta_toxicity_classifier",
+      "task": "text-classification",
+      "downloads": 249598,
+      "likes": 69,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+      "task": "text-classification",
+      "downloads": 239569,
+      "likes": 305,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "facebook/fasttext-language-identification",
+      "task": "text-classification",
+      "downloads": 232442,
+      "likes": 262,
+      "last_modified": "2023-01-01",
+      "tags": [],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp",
+      "task": "text-classification",
+      "downloads": 225484,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "SamLowe/roberta-base-go_emotions",
+      "task": "text-classification",
+      "downloads": 225103,
+      "likes": 664,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/nli-MiniLM2-L6-H768",
+      "task": "text-classification",
+      "downloads": 217926,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "jamal-ibrahim/risk_assesment",
+      "task": "text-classification",
+      "downloads": 213391,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "blanchefort/rubert-base-cased-sentiment",
+      "task": "text-classification",
+      "downloads": 212634,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "tomh/toxigen_hatebert",
+      "task": "text-classification",
+      "downloads": 207693,
+      "likes": 15,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/nli-deberta-v3-small",
+      "task": "text-classification",
+      "downloads": 207180,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "Xuhui/ToxDect-roberta-large",
+      "task": "text-classification",
+      "downloads": 207138,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "padmajabfrl/Gender-Classification",
+      "task": "text-classification",
+      "downloads": 204882,
+      "likes": 32,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "internlm/internlm2-1_8b-reward",
+      "task": "text-classification",
+      "downloads": 186462,
+      "likes": 16,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "hkunlp/instructor-xl",
+      "task": "text-classification",
+      "downloads": 179035,
+      "likes": 584,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/nli-deberta-v3-base",
+      "task": "text-classification",
+      "downloads": 173790,
+      "likes": 41,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "oliverguhr/german-sentiment-bert",
+      "task": "text-classification",
+      "downloads": 164216,
+      "likes": 68,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "task": "text-classification",
+      "downloads": 164147,
+      "likes": 123,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "circulus/koelectra-polite-v1",
+      "task": "text-classification",
+      "downloads": 162486,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ElKulako/cryptobert",
+      "task": "text-classification",
+      "downloads": 161560,
+      "likes": 186,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "farbodtavakkoli/OTel-Reranker-4B",
+      "task": "text-classification",
+      "downloads": 159072,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder-testing/reranker-bert-tiny-gooaq-bce",
+      "task": "text-classification",
+      "downloads": 156973,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "Arunavaonly/Bangla-twoclass-Sentiment-Analyzer",
+      "task": "text-classification",
+      "downloads": 156564,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "siebert/sentiment-roberta-large-english",
+      "task": "text-classification",
+      "downloads": 152290,
+      "likes": 150,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "farbodtavakkoli/OTel-LLM-8.3B-Classification",
+      "task": "text-classification",
+      "downloads": 152028,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "farbodtavakkoli/OTel-Reranker-8B",
+      "task": "text-classification",
+      "downloads": 151583,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/stsb-roberta-base",
+      "task": "text-classification",
+      "downloads": 142129,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cross-encoder/stsb-distilroberta-base",
+      "task": "text-classification",
+      "downloads": 135686,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "joeddav/xlm-roberta-large-xnli",
+      "task": "text-classification",
+      "downloads": 133076,
+      "likes": 289,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "blanchefort/rubert-base-cased-sentiment-rusentiment",
+      "task": "text-classification",
+      "downloads": 127320,
+      "likes": 15,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "finiteautomata/bertweet-base-sentiment-analysis",
+      "task": "text-classification",
+      "downloads": 120142,
+      "likes": 192,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "qandos0/SentimentArEng",
+      "task": "text-classification",
+      "downloads": 118764,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "sileod/deberta-v3-base-tasksource-nli",
+      "task": "text-classification",
+      "downloads": 118310,
+      "likes": 133,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mixedbread-ai/mxbai-rerank-large-v1",
+      "task": "text-classification",
+      "downloads": 118094,
+      "likes": 142,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "cross-encoder/stsb-roberta-large",
+      "task": "text-classification",
+      "downloads": 117636,
+      "likes": 14,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "optimum-intel-internal-testing/tiny-random-distilbert",
+      "task": "text-classification",
+      "downloads": 116212,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "climatebert/distilroberta-base-climate-detector",
+      "task": "text-classification",
+      "downloads": 114752,
+      "likes": 17,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "jitesh/emotion-english",
+      "task": "text-classification",
+      "downloads": 114507,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
+      "task": "text-classification",
+      "downloads": 114467,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "protectai/deberta-v3-base-prompt-injection",
+      "task": "text-classification",
+      "downloads": 114370,
+      "likes": 106,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mrm8488/bert-tiny-finetuned-sms-spam-detection",
+      "task": "text-classification",
+      "downloads": 113371,
+      "likes": 54,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "MilaNLProc/feel-it-italian-emotion",
+      "task": "text-classification",
+      "downloads": 111618,
+      "likes": 18,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-Math-PRM-7B",
+      "task": "text-classification",
+      "downloads": 110442,
+      "likes": 86,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "task": "text-classification",
+      "downloads": 109507,
+      "likes": 105,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "valhalla/distilbart-mnli-12-3",
+      "task": "text-classification",
+      "downloads": 106000,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ac0hik/Sentiment_Analysis_French",
+      "task": "text-classification",
+      "downloads": 105420,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Hate-speech-CNERG/dehatebert-mono-english",
+      "task": "text-classification",
+      "downloads": 104584,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Alibaba-NLP/gte-multilingual-reranker-base",
+      "task": "text-classification",
+      "downloads": 104361,
+      "likes": 176,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ignacio-ave/beto-sentiment-analysis-spanish",
+      "task": "text-classification",
+      "downloads": 104255,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    }
+  ],
+  "text-generation": [
+    {
+      "id": "Qwen/Qwen3-0.6B",
+      "task": "text-generation",
+      "downloads": 16401303,
+      "likes": 1203,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "openai-community/gpt2",
+      "task": "text-generation",
+      "downloads": 14192930,
+      "likes": 3215,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct",
+      "task": "text-generation",
+      "downloads": 12297942,
+      "likes": 1220,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "task": "text-generation",
+      "downloads": 10644274,
+      "likes": 677,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.5,
+      "estimated_vram_gb": 3.0
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.2",
+      "task": "text-generation",
+      "downloads": 10558888,
+      "likes": 1416,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-3B-Instruct",
+      "task": "text-generation",
+      "downloads": 10126640,
+      "likes": 447,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "Qwen/Qwen3-4B-Instruct-2507",
+      "task": "text-generation",
+      "downloads": 10064813,
+      "likes": 815,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "meta-llama/Llama-3.1-8B-Instruct",
+      "task": "text-generation",
+      "downloads": 9460271,
+      "likes": 5741,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-8B",
+      "task": "text-generation",
+      "downloads": 8793263,
+      "likes": 1058,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-4B",
+      "task": "text-generation",
+      "downloads": 7336560,
+      "likes": 603,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+      "task": "text-generation",
+      "downloads": 7040075,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "Qwen/Qwen3-1.7B",
+      "task": "text-generation",
+      "downloads": 6988991,
+      "likes": 450,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "facebook/opt-125m",
+      "task": "text-generation",
+      "downloads": 6905330,
+      "likes": 243,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "task": "text-generation",
+      "downloads": 6519659,
+      "likes": 4554,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-Embedding-0.6B",
+      "task": "text-generation",
+      "downloads": 5960993,
+      "likes": 990,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "task": "text-generation",
+      "downloads": 5819539,
+      "likes": 500,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "meta-llama/Llama-3.2-1B-Instruct",
+      "task": "text-generation",
+      "downloads": 4800736,
+      "likes": 1374,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "dphn/dolphin-2.9.1-yi-1.5-34b",
+      "task": "text-generation",
+      "downloads": 4471561,
+      "likes": 61,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 34.0,
+      "estimated_vram_gb": 68.0
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1",
+      "task": "text-generation",
+      "downloads": 4020320,
+      "likes": 13289,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "meta-llama/Llama-3.2-3B-Instruct",
+      "task": "text-generation",
+      "downloads": 3925512,
+      "likes": 2101,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "task": "text-generation",
+      "downloads": 3590484,
+      "likes": 4721,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3-8B",
+      "task": "text-generation",
+      "downloads": 3350773,
+      "likes": 6522,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2-1.5B-Instruct",
+      "task": "text-generation",
+      "downloads": 3259906,
+      "likes": 162,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.5,
+      "estimated_vram_gb": 3.0
+    },
+    {
+      "id": "Qwen/Qwen2.5-32B-Instruct",
+      "task": "text-generation",
+      "downloads": 3245252,
+      "likes": 346,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "task": "text-generation",
+      "downloads": 3045626,
+      "likes": 1568,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "Qwen/Qwen3-14B",
+      "task": "text-generation",
+      "downloads": 3040579,
+      "likes": 386,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "EleutherAI/pythia-160m",
+      "task": "text-generation",
+      "downloads": 2757727,
+      "likes": 39,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "distilbert/distilgpt2",
+      "task": "text-generation",
+      "downloads": 2587191,
+      "likes": 625,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "task": "text-generation",
+      "downloads": 2486439,
+      "likes": 1019,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "openai-community/gpt2-large",
+      "task": "text-generation",
+      "downloads": 2485185,
+      "likes": 348,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "vikhyatk/moondream2",
+      "task": "text-generation",
+      "downloads": 2472042,
+      "likes": 1407,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-32B",
+      "task": "text-generation",
+      "downloads": 2373549,
+      "likes": 685,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "task": "text-generation",
+      "downloads": 2136798,
+      "likes": 855,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mistralai/Mistral-7B-Instruct-v0.2",
+      "task": "text-generation",
+      "downloads": 2011386,
+      "likes": 3125,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "Qwen/Qwen3-Embedding-8B",
+      "task": "text-generation",
+      "downloads": 1943708,
+      "likes": 658,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "meta-llama/Llama-2-7b-hf",
+      "task": "text-generation",
+      "downloads": 1912957,
+      "likes": 2291,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "Qwen/Qwen3-4B-Base",
+      "task": "text-generation",
+      "downloads": 1868983,
+      "likes": 86,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-14B-Instruct-AWQ",
+      "task": "text-generation",
+      "downloads": 1858734,
+      "likes": 33,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-14B-Instruct",
+      "task": "text-generation",
+      "downloads": 1824088,
+      "likes": 331,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-0.6B-FP8",
+      "task": "text-generation",
+      "downloads": 1822001,
+      "likes": 58,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "task": "text-generation",
+      "downloads": 1821984,
+      "likes": 696,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "Qwen/Qwen3-Embedding-4B",
+      "task": "text-generation",
+      "downloads": 1782539,
+      "likes": 252,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "hmellor/tiny-random-LlamaForCausalLM",
+      "task": "text-generation",
+      "downloads": 1768575,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "RedHatAI/Llama-3.2-1B-Instruct-FP8-dynamic",
+      "task": "text-generation",
+      "downloads": 1649306,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "Qwen/Qwen2.5-0.5B",
+      "task": "text-generation",
+      "downloads": 1573426,
+      "likes": 394,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "apple/OpenELM-1_1B-Instruct",
+      "task": "text-generation",
+      "downloads": 1527024,
+      "likes": 74,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "microsoft/Phi-3.5-vision-instruct",
+      "task": "text-generation",
+      "downloads": 1504707,
+      "likes": 731,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "farbodtavakkoli/OTel-LLM-8.3B-IT",
+      "task": "text-generation",
+      "downloads": 1502837,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-7B",
+      "task": "text-generation",
+      "downloads": 1493507,
+      "likes": 141,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "meta-llama/Llama-3.1-8B",
+      "task": "text-generation",
+      "downloads": 1467537,
+      "likes": 2163,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-Reranker-0.6B",
+      "task": "text-generation",
+      "downloads": 1457357,
+      "likes": 335,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "task": "text-generation",
+      "downloads": 1450155,
+      "likes": 717,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "nvidia/Gemma-4-31B-IT-NVFP4",
+      "task": "text-generation",
+      "downloads": 1396565,
+      "likes": 419,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "task": "text-generation",
+      "downloads": 1371752,
+      "likes": 4487,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "zai-org/GLM-5-FP8",
+      "task": "text-generation",
+      "downloads": 1369902,
+      "likes": 172,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "bigscience/bloomz-560m",
+      "task": "text-generation",
+      "downloads": 1354856,
+      "likes": 137,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "microsoft/Phi-4-mini-instruct",
+      "task": "text-generation",
+      "downloads": 1343039,
+      "likes": 726,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-32B-Instruct-AWQ",
+      "task": "text-generation",
+      "downloads": 1335310,
+      "likes": 98,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B",
+      "task": "text-generation",
+      "downloads": 1331282,
+      "likes": 879,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "farbodtavakkoli/OTel-LLM-1.2B-IT",
+      "task": "text-generation",
+      "downloads": 1311962,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "kaitchup/Phi-3-mini-4k-instruct-gptq-4bit",
+      "task": "text-generation",
+      "downloads": 1307516,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "HuggingFaceTB/SmolLM2-135M",
+      "task": "text-generation",
+      "downloads": 1292917,
+      "likes": 185,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B",
+      "task": "text-generation",
+      "downloads": 1288151,
+      "likes": 276,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "meta-llama/Llama-3.2-1B",
+      "task": "text-generation",
+      "downloads": 1280373,
+      "likes": 2370,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "task": "text-generation",
+      "downloads": 1257495,
+      "likes": 2009,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+      "task": "text-generation",
+      "downloads": 1239545,
+      "likes": 274,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "llamafactory/tiny-random-Llama-3",
+      "task": "text-generation",
+      "downloads": 1237892,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "EleutherAI/pythia-70m-deduped",
+      "task": "text-generation",
+      "downloads": 1220774,
+      "likes": 28,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "thuml/sundial-base-128m",
+      "task": "text-generation",
+      "downloads": 1215863,
+      "likes": 75,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "bartowski/gemma-2-2b-it-GGUF",
+      "task": "text-generation",
+      "downloads": 1171396,
+      "likes": 91,
+      "last_modified": "2023-01-01",
+      "tags": [],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "nvidia/Kimi-K2.5-NVFP4",
+      "task": "text-generation",
+      "downloads": 1074107,
+      "likes": 79,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-1.5B",
+      "task": "text-generation",
+      "downloads": 1051472,
+      "likes": 173,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.5,
+      "estimated_vram_gb": 3.0
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "task": "text-generation",
+      "downloads": 1046750,
+      "likes": 1545,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-4B-Thinking-2507",
+      "task": "text-generation",
+      "downloads": 1043381,
+      "likes": 579,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen3-8B-AWQ",
+      "task": "text-generation",
+      "downloads": 1034072,
+      "likes": 40,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "farbodtavakkoli/OTel-LLM-0.6B-IT",
+      "task": "text-generation",
+      "downloads": 1033854,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-14B-Instruct",
+      "task": "text-generation",
+      "downloads": 1030633,
+      "likes": 150,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int4",
+      "task": "text-generation",
+      "downloads": 1026016,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "task": "text-generation",
+      "downloads": 1005512,
+      "likes": 801,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "meta-llama/Llama-3.2-3B",
+      "task": "text-generation",
+      "downloads": 1002042,
+      "likes": 754,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "openai-community/gpt2-medium",
+      "task": "text-generation",
+      "downloads": 983454,
+      "likes": 199,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "RedHatAI/Qwen2.5-1.5B-quantized.w8a8",
+      "task": "text-generation",
+      "downloads": 972557,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.5,
+      "estimated_vram_gb": 3.0
+    },
+    {
+      "id": "h2oai/h2ovl-mississippi-800m",
+      "task": "text-generation",
+      "downloads": 949649,
+      "likes": 39,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "MiniMaxAI/MiniMax-M2.5",
+      "task": "text-generation",
+      "downloads": 935204,
+      "likes": 1463,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "h2oai/h2ovl-mississippi-2b",
+      "task": "text-generation",
+      "downloads": 934608,
+      "likes": 42,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mistralai/Mistral-7B-v0.1",
+      "task": "text-generation",
+      "downloads": 933459,
+      "likes": 4080,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "sshleifer/tiny-gpt2",
+      "task": "text-generation",
+      "downloads": 916481,
+      "likes": 35,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "RedHatAI/Llama-3.2-1B-Instruct-FP8",
+      "task": "text-generation",
+      "downloads": 901375,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3",
+      "task": "text-generation",
+      "downloads": 893429,
+      "likes": 4057,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF",
+      "task": "text-generation",
+      "downloads": 857906,
+      "likes": 46,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "microsoft/phi-2",
+      "task": "text-generation",
+      "downloads": 857023,
+      "likes": 3447,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+      "task": "text-generation",
+      "downloads": 853314,
+      "likes": 135,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "task": "text-generation",
+      "downloads": 833817,
+      "likes": 40,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "Qwen/Qwen3-14B-AWQ",
+      "task": "text-generation",
+      "downloads": 823517,
+      "likes": 62,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "farbodtavakkoli/OTel-LLM-1B-IT",
+      "task": "text-generation",
+      "downloads": 815735,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "task": "text-generation",
+      "downloads": 806277,
+      "likes": 309,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ibm-research/PowerMoE-3b",
+      "task": "text-generation",
+      "downloads": 805124,
+      "likes": 19,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "Qwen/Qwen3-Reranker-4B",
+      "task": "text-generation",
+      "downloads": 794700,
+      "likes": 130,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "lightonai/LightOnOCR-2-1B",
+      "task": "text-generation",
+      "downloads": 788433,
+      "likes": 662,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "ai4bharat/indic-parler-tts",
+      "task": "text-generation",
+      "downloads": 773864,
+      "likes": 219,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    }
+  ],
+  "token-classification": [
+    {
+      "id": "w11wo/indonesian-roberta-base-posp-tagger",
+      "task": "token-classification",
+      "downloads": 2031317,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "dslim/bert-base-NER",
+      "task": "token-classification",
+      "downloads": 1895883,
+      "likes": 706,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "StanfordAIMI/stanford-deidentifier-base",
+      "task": "token-classification",
+      "downloads": 1386105,
+      "likes": 80,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+      "task": "token-classification",
+      "downloads": 1152893,
+      "likes": 96,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "Babelscape/wikineural-multilingual-ner",
+      "task": "token-classification",
+      "downloads": 803875,
+      "likes": 160,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "kredor/punctuate-all",
+      "task": "token-classification",
+      "downloads": 588353,
+      "likes": 25,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Davlan/xlm-roberta-large-ner-hrl",
+      "task": "token-classification",
+      "downloads": 581236,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "flair/ner-english-fast",
+      "task": "token-classification",
+      "downloads": 473131,
+      "likes": 26,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "oliverguhr/fullstop-punctuation-multilang-large",
+      "task": "token-classification",
+      "downloads": 470748,
+      "likes": 174,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "microsoft/llmlingua-2-xlm-roberta-large-meetingbank",
+      "task": "token-classification",
+      "downloads": 448726,
+      "likes": 27,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "obi/deid_roberta_i2b2",
+      "task": "token-classification",
+      "downloads": 442299,
+      "likes": 38,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "covalenthq/cryptoNER",
+      "task": "token-classification",
+      "downloads": 419562,
+      "likes": 15,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ckiplab/bert-base-chinese-ws",
+      "task": "token-classification",
+      "downloads": 368276,
+      "likes": 19,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "dslim/distilbert-NER",
+      "task": "token-classification",
+      "downloads": 348923,
+      "likes": 50,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Davlan/bert-base-multilingual-cased-ner-hrl",
+      "task": "token-classification",
+      "downloads": 347053,
+      "likes": 81,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "akdeniz27/bert-base-turkish-cased-ner",
+      "task": "token-classification",
+      "downloads": 344831,
+      "likes": 25,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "segment-any-text/sat-12l-sm",
+      "task": "token-classification",
+      "downloads": 324478,
+      "likes": 28,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Jean-Baptiste/roberta-large-ner-english",
+      "task": "token-classification",
+      "downloads": 312670,
+      "likes": 79,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "tomaarsen/span-marker-mbert-base-multinerd",
+      "task": "token-classification",
+      "downloads": 283655,
+      "likes": 71,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "segment-any-text/sat-3l-sm",
+      "task": "token-classification",
+      "downloads": 265388,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "tomaarsen/span-marker-bert-base-uncased-acronyms",
+      "task": "token-classification",
+      "downloads": 235645,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "dicta-il/dictabert-ner",
+      "task": "token-classification",
+      "downloads": 228904,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "gilf/french-camembert-postag-model",
+      "task": "token-classification",
+      "downloads": 218752,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-BloodCancerDetect-TinyMed-65M",
+      "task": "token-classification",
+      "downloads": 208174,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "mirth/chonky_distilbert_base_uncased_1",
+      "task": "token-classification",
+      "downloads": 203127,
+      "likes": 15,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-434M",
+      "task": "token-classification",
+      "downloads": 192254,
+      "likes": 24,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M",
+      "task": "token-classification",
+      "downloads": 189823,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-395M",
+      "task": "token-classification",
+      "downloads": 185961,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PathologyDetect-TinyMed-135M",
+      "task": "token-classification",
+      "downloads": 183226,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-SpeciesDetect-ElectraMed-109M",
+      "task": "token-classification",
+      "downloads": 182747,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M",
+      "task": "token-classification",
+      "downloads": 182722,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-AnatomyDetect-ElectraMed-109M",
+      "task": "token-classification",
+      "downloads": 180095,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Jean-Baptiste/camembert-ner-with-dates",
+      "task": "token-classification",
+      "downloads": 179835,
+      "likes": 46,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OncologyDetect-MultiMed-568M",
+      "task": "token-classification",
+      "downloads": 179707,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Gherman/bert-base-NER-Russian",
+      "task": "token-classification",
+      "downloads": 177857,
+      "likes": 21,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "lfcc/bert-portuguese-ner",
+      "task": "token-classification",
+      "downloads": 173767,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "CAMeL-Lab/bert-base-arabic-camelbert-msa-ner",
+      "task": "token-classification",
+      "downloads": 169367,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OncologyDetect-BigMed-278M",
+      "task": "token-classification",
+      "downloads": 167866,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "pierreguillou/ner-bert-base-cased-pt-lenerbr",
+      "task": "token-classification",
+      "downloads": 164031,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "kontur-ai/sbert_punc_case_ru",
+      "task": "token-classification",
+      "downloads": 161044,
+      "likes": 39,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OrganismDetect-BioPatient-108M",
+      "task": "token-classification",
+      "downloads": 157510,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "DeepMount00/Italian_NER_XXL_v2",
+      "task": "token-classification",
+      "downloads": 155700,
+      "likes": 27,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OrganismDetect-TinyMed-82M",
+      "task": "token-classification",
+      "downloads": 155387,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M",
+      "task": "token-classification",
+      "downloads": 154097,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "hantian/layoutreader",
+      "task": "token-classification",
+      "downloads": 153577,
+      "likes": 42,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "tner/roberta-large-tweetner7-all",
+      "task": "token-classification",
+      "downloads": 150410,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "flair/ner-english",
+      "task": "token-classification",
+      "downloads": 148280,
+      "likes": 36,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "IsmaelMousa/modernbert-ner-conll2003",
+      "task": "token-classification",
+      "downloads": 146474,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ChemicalDetect-MultiMed-568M",
+      "task": "token-classification",
+      "downloads": 145148,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ChemicalDetect-BigMed-560M",
+      "task": "token-classification",
+      "downloads": 144771,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ai4bharat/IndicNER",
+      "task": "token-classification",
+      "downloads": 144063,
+      "likes": 29,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-DiseaseDetect-ElectraMed-109M",
+      "task": "token-classification",
+      "downloads": 143439,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Xenova/bert-base-NER",
+      "task": "token-classification",
+      "downloads": 141609,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PharmaDetect-ModernClinical-149M",
+      "task": "token-classification",
+      "downloads": 138928,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M",
+      "task": "token-classification",
+      "downloads": 137860,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-BloodCancerDetect-ElectraMed-560M",
+      "task": "token-classification",
+      "downloads": 137523,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomeDetect-ModernMed-149M",
+      "task": "token-classification",
+      "downloads": 135709,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomicDetect-PubMed-335M",
+      "task": "token-classification",
+      "downloads": 134631,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OncologyDetect-SuperClinical-434M",
+      "task": "token-classification",
+      "downloads": 131260,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-SpeciesDetect-ModernClinical-395M",
+      "task": "token-classification",
+      "downloads": 130836,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomicDetect-PubMed-109M",
+      "task": "token-classification",
+      "downloads": 130115,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PharmaDetect-BigMed-278M",
+      "task": "token-classification",
+      "downloads": 129318,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PharmaDetect-BioPatient-108M",
+      "task": "token-classification",
+      "downloads": 128404,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PharmaDetect-BigMed-560M",
+      "task": "token-classification",
+      "downloads": 126038,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "dslim/bert-large-NER",
+      "task": "token-classification",
+      "downloads": 124471,
+      "likes": 162,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomicDetect-BigMed-560M",
+      "task": "token-classification",
+      "downloads": 123640,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ckiplab/bert-base-chinese-pos",
+      "task": "token-classification",
+      "downloads": 123333,
+      "likes": 17,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "saattrupdan/nbailab-base-ner-scandi",
+      "task": "token-classification",
+      "downloads": 122637,
+      "likes": 24,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "flair/ner-english-ontonotes-large",
+      "task": "token-classification",
+      "downloads": 119797,
+      "likes": 100,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "Davlan/xlm-roberta-base-ner-hrl",
+      "task": "token-classification",
+      "downloads": 117566,
+      "likes": 28,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OrganismDetect-BioMed-109M",
+      "task": "token-classification",
+      "downloads": 116377,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "FacebookAI/xlm-roberta-large-finetuned-conll03-english",
+      "task": "token-classification",
+      "downloads": 113427,
+      "likes": 183,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomeDetect-ModernMed-395M",
+      "task": "token-classification",
+      "downloads": 107273,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ChemicalDetect-PubMed-335M",
+      "task": "token-classification",
+      "downloads": 106271,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "siddharthtumre/biobert-finetuned-ner",
+      "task": "token-classification",
+      "downloads": 101175,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-DiseaseDetect-SuperClinical-434M",
+      "task": "token-classification",
+      "downloads": 100019,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ProteinDetect-SnowMed-568M",
+      "task": "token-classification",
+      "downloads": 99728,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomeDetect-PubMed-109M",
+      "task": "token-classification",
+      "downloads": 99282,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank",
+      "task": "token-classification",
+      "downloads": 99212,
+      "likes": 50,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "oliverguhr/fullstop-punctuation-multilingual-base",
+      "task": "token-classification",
+      "downloads": 99100,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PathologyDetect-PubMed-109M",
+      "task": "token-classification",
+      "downloads": 98736,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-SpeciesDetect-ModernMed-149M",
+      "task": "token-classification",
+      "downloads": 97795,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OncologyDetect-SuperMedical-355M",
+      "task": "token-classification",
+      "downloads": 96837,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PathologyDetect-BigMed-560M",
+      "task": "token-classification",
+      "downloads": 95048,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PharmaDetect-SuperMedical-125M",
+      "task": "token-classification",
+      "downloads": 94691,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-BloodCancerDetect-SnowMed-568M",
+      "task": "token-classification",
+      "downloads": 92844,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-BloodCancerDetect-ModernMed-149M",
+      "task": "token-classification",
+      "downloads": 92487,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ProteinDetect-TinyMed-135M",
+      "task": "token-classification",
+      "downloads": 92051,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-DNADetect-SnowMed-568M",
+      "task": "token-classification",
+      "downloads": 91875,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-ChemicalDetect-BioMed-335M",
+      "task": "token-classification",
+      "downloads": 91860,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OncologyDetect-ElectraMed-33M",
+      "task": "token-classification",
+      "downloads": 91791,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-PathologyDetect-SuperClinical-184M",
+      "task": "token-classification",
+      "downloads": 91773,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OrganismDetect-PubMed-335M",
+      "task": "token-classification",
+      "downloads": 91710,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomicDetect-MultiMed-335M",
+      "task": "token-classification",
+      "downloads": 91638,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomeDetect-ElectraMed-560M",
+      "task": "token-classification",
+      "downloads": 91560,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-SpeciesDetect-PubMed-109M",
+      "task": "token-classification",
+      "downloads": 91474,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-GenomicDetect-SuperMedical-125M",
+      "task": "token-classification",
+      "downloads": 91278,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-SpeciesDetect-TinyMed-135M",
+      "task": "token-classification",
+      "downloads": 90779,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-BloodCancerDetect-PubMed-335M",
+      "task": "token-classification",
+      "downloads": 90669,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "OpenMed/OpenMed-NER-OrganismDetect-SuperClinical-434M",
+      "task": "token-classification",
+      "downloads": 90454,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    }
+  ],
+  "question-answering": [
+    {
+      "id": "ahotrod/electra_large_discriminator_squad2_512",
+      "task": "question-answering",
+      "downloads": 854814,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "deepset/roberta-base-squad2",
+      "task": "question-answering",
+      "downloads": 609337,
+      "likes": 942,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google-bert/bert-large-uncased-whole-word-masking-finetuned-squad",
+      "task": "question-answering",
+      "downloads": 411381,
+      "likes": 188,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "distilbert/distilbert-base-cased-distilled-squad",
+      "task": "question-answering",
+      "downloads": 226273,
+      "likes": 266,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/roberta-large-squad2",
+      "task": "question-answering",
+      "downloads": 225264,
+      "likes": 29,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "deepset/bert-large-uncased-whole-word-masking-squad2",
+      "task": "question-answering",
+      "downloads": 184589,
+      "likes": 31,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "monologg/koelectra-small-v2-distilled-korquad-384",
+      "task": "question-answering",
+      "downloads": 153253,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "timpal0l/mdeberta-v3-base-squad2",
+      "task": "question-answering",
+      "downloads": 143269,
+      "likes": 258,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/tinyroberta-squad2",
+      "task": "question-answering",
+      "downloads": 141422,
+      "likes": 113,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "nguyenvulebinh/vi-mrc-large",
+      "task": "question-answering",
+      "downloads": 109835,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "tau/splinter-base",
+      "task": "question-answering",
+      "downloads": 97804,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/xlm-roberta-large-squad2",
+      "task": "question-answering",
+      "downloads": 91168,
+      "likes": 57,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "distilbert/distilbert-base-uncased-distilled-squad",
+      "task": "question-answering",
+      "downloads": 86862,
+      "likes": 119,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "csarron/mobilebert-uncased-squad-v2",
+      "task": "question-answering",
+      "downloads": 82643,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "monologg/koelectra-base-v3-finetuned-korquad",
+      "task": "question-answering",
+      "downloads": 81842,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/bert-base-cased-squad2",
+      "task": "question-answering",
+      "downloads": 51907,
+      "likes": 21,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/gelectra-large-germanquad",
+      "task": "question-answering",
+      "downloads": 49275,
+      "likes": 27,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "philschmid/distilbert-onnx",
+      "task": "question-answering",
+      "downloads": 47305,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google-bert/bert-large-cased-whole-word-masking-finetuned-squad",
+      "task": "question-answering",
+      "downloads": 37193,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "deepset/minilm-uncased-squad2",
+      "task": "question-answering",
+      "downloads": 27253,
+      "likes": 47,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/deberta-v3-large-squad2",
+      "task": "question-answering",
+      "downloads": 21112,
+      "likes": 52,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "sshleifer/tiny-distilbert-base-cased-distilled-squad",
+      "task": "question-answering",
+      "downloads": 15729,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "michiyasunaga/BioLinkBERT-base",
+      "task": "question-answering",
+      "downloads": 14800,
+      "likes": 45,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "dmis-lab/biobert-large-cased-v1.1-squad",
+      "task": "question-answering",
+      "downloads": 14647,
+      "likes": 21,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "deepset/bert-medium-squad2-distilled",
+      "task": "question-answering",
+      "downloads": 14365,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/xlm-roberta-base-squad2",
+      "task": "question-answering",
+      "downloads": 10904,
+      "likes": 25,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "armageddon/roberta-large-squad2-covid-qa-deepset",
+      "task": "question-answering",
+      "downloads": 10423,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "shaina/covid_qa_distillBert",
+      "task": "question-answering",
+      "downloads": 8781,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "VietAI/vit5-base",
+      "task": "question-answering",
+      "downloads": 8351,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "sjrhuschlee/flan-t5-base-squad2",
+      "task": "question-answering",
+      "downloads": 7023,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Rakib/roberta-base-on-cuad",
+      "task": "question-answering",
+      "downloads": 6616,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/bert-base-uncased-squad2",
+      "task": "question-answering",
+      "downloads": 6479,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "michiyasunaga/BioLinkBERT-large",
+      "task": "question-answering",
+      "downloads": 6389,
+      "likes": 44,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "csarron/bert-base-uncased-squad-v1",
+      "task": "question-answering",
+      "downloads": 6351,
+      "likes": 14,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/deberta-v3-base-squad2",
+      "task": "question-answering",
+      "downloads": 5853,
+      "likes": 21,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "bigwiz83/sapbert-from-pubmedbert-squad2",
+      "task": "question-answering",
+      "downloads": 5604,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/roberta-base-squad2-distilled",
+      "task": "question-answering",
+      "downloads": 4941,
+      "likes": 15,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "omkarthawakar/LlamaV-o1",
+      "task": "question-answering",
+      "downloads": 4611,
+      "likes": 96,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Manhph2211/Q-HEART",
+      "task": "question-answering",
+      "downloads": 3580,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "razent/SciFive-base-Pubmed_PMC",
+      "task": "question-answering",
+      "downloads": 3270,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Xenova/distilbert-base-cased-distilled-squad",
+      "task": "question-answering",
+      "downloads": 3220,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Raghavan/beit3_base_patch16_480_vqa",
+      "task": "question-answering",
+      "downloads": 2955,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "kiri-ai/t5-base-qa-summary-emotion",
+      "task": "question-answering",
+      "downloads": 2944,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "michiyasunaga/LinkBERT-large",
+      "task": "question-answering",
+      "downloads": 2913,
+      "likes": 14,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "zli12321/roberta-large-qa-evaluator",
+      "task": "question-answering",
+      "downloads": 2708,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "deepset/gelectra-base-germanquad",
+      "task": "question-answering",
+      "downloads": 2687,
+      "likes": 26,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "phiyodr/bert-large-finetuned-squad2",
+      "task": "question-answering",
+      "downloads": 2547,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "twmkn9/albert-base-v2-squad2",
+      "task": "question-answering",
+      "downloads": 2463,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "uer/roberta-base-chinese-extractive-qa",
+      "task": "question-answering",
+      "downloads": 2447,
+      "likes": 102,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "jackxinning/Leanly_AI",
+      "task": "question-answering",
+      "downloads": 2343,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "tau/splinter-base-qass",
+      "task": "question-answering",
+      "downloads": 2226,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "task": "question-answering",
+      "downloads": 2223,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "litert-community/Gecko-110m-en",
+      "task": "question-answering",
+      "downloads": 1978,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Jacaranda/UlizaLlama",
+      "task": "question-answering",
+      "downloads": 1953,
+      "likes": 26,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "VietAI/envit5-base",
+      "task": "question-answering",
+      "downloads": 1940,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "behbudiy/Mistral-7B-Instruct-Uz",
+      "task": "question-answering",
+      "downloads": 1814,
+      "likes": 14,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "AlicanKiraz0/Kara-Kumru-v1.0-2B",
+      "task": "question-answering",
+      "downloads": 1789,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "AgentPublic/camembert-base-squadFR-fquad-piaf",
+      "task": "question-answering",
+      "downloads": 1772,
+      "likes": 28,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mattritchey/next-1b-Q4_K_M-GGUF",
+      "task": "question-answering",
+      "downloads": 1719,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "Den4ikAI/rubert_large_squad_2",
+      "task": "question-answering",
+      "downloads": 1651,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "csarron/mobilebert-uncased-squad-v1",
+      "task": "question-answering",
+      "downloads": 1537,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Jackrong/gpt-oss-120b-Distill-Phi-4-14B-GGUF",
+      "task": "question-answering",
+      "downloads": 1537,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/electra-base-squad2",
+      "task": "question-answering",
+      "downloads": 1523,
+      "likes": 18,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Intel/dynamic_tinybert",
+      "task": "question-answering",
+      "downloads": 1519,
+      "likes": 82,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "HPAI-BSC/Llama3.1-Aloe-Beta-8B",
+      "task": "question-answering",
+      "downloads": 1496,
+      "likes": 19,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "maddes8cht/cxllin-StableHermes-3b-gguf",
+      "task": "question-answering",
+      "downloads": 1433,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "pierreguillou/bert-base-cased-squad-v1.1-portuguese",
+      "task": "question-answering",
+      "downloads": 1402,
+      "likes": 41,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mradermacher/EraX-VL-7B-V2.0-Preview-i1-GGUF",
+      "task": "question-answering",
+      "downloads": 1356,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "DragonLLM/Llama-Open-Finance-8B",
+      "task": "question-answering",
+      "downloads": 1327,
+      "likes": 22,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mrm8488/bert-medium-finetuned-squadv2",
+      "task": "question-answering",
+      "downloads": 1325,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "thelamapi/next-1b",
+      "task": "question-answering",
+      "downloads": 1290,
+      "likes": 27,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "Lamapi/next-4b-Q4_K_M-GGUF",
+      "task": "question-answering",
+      "downloads": 1218,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "vasudevgupta/bigbird-roberta-natural-questions",
+      "task": "question-answering",
+      "downloads": 1216,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "task": "question-answering",
+      "downloads": 1172,
+      "likes": 48,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deepset/xlm-roberta-base-squad2-distilled",
+      "task": "question-answering",
+      "downloads": 1127,
+      "likes": 11,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mradermacher/EraX-VL-7B-V2.0-Preview-GGUF",
+      "task": "question-answering",
+      "downloads": 1104,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "HPAI-BSC/Llama3-Aloe-8B-Alpha",
+      "task": "question-answering",
+      "downloads": 1056,
+      "likes": 65,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mrm8488/bert-tiny-finetuned-squadv2",
+      "task": "question-answering",
+      "downloads": 1049,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.03,
+      "estimated_vram_gb": 0.06
+    },
+    {
+      "id": "Naseej/noon-7b",
+      "task": "question-answering",
+      "downloads": 1013,
+      "likes": 49,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "rsvp-ai/bertserini-bert-base-squad",
+      "task": "question-answering",
+      "downloads": 997,
+      "likes": 12,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "knowledgator/gliner-multitask-large-v0.5",
+      "task": "question-answering",
+      "downloads": 993,
+      "likes": 138,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "pierreguillou/bert-large-cased-squad-v1.1-portuguese",
+      "task": "question-answering",
+      "downloads": 952,
+      "likes": 45,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "shay681/HeBERT_finetuned_Legal_Clauses",
+      "task": "question-answering",
+      "downloads": 943,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Xenova/distilbert-base-uncased-distilled-squad",
+      "task": "question-answering",
+      "downloads": 903,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "dmis-lab/biobert-base-cased-v1.1-squad",
+      "task": "question-answering",
+      "downloads": 874,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "onnx-community/ModernBERT-finetuned-squad-ONNX",
+      "task": "question-answering",
+      "downloads": 847,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "TIGER-Lab/general-verifier",
+      "task": "question-answering",
+      "downloads": 832,
+      "likes": 21,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "HPAI-BSC/Qwen2.5-Aloe-Beta-7B",
+      "task": "question-answering",
+      "downloads": 797,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "AlexKay/xlm-roberta-large-qa-multilingual-finedtuned-ru",
+      "task": "question-answering",
+      "downloads": 791,
+      "likes": 50,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "mrm8488/bert-multi-cased-finetuned-xquadv1",
+      "task": "question-answering",
+      "downloads": 764,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Lamapi/next-12b-Q4_K_M-GGUF",
+      "task": "question-answering",
+      "downloads": 748,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Sindhu/muril-large-squad2",
+      "task": "question-answering",
+      "downloads": 737,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "consciousAI/question-answering-roberta-base-s-v2",
+      "task": "question-answering",
+      "downloads": 722,
+      "likes": 15,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "savasy/bert-base-turkish-squad",
+      "task": "question-answering",
+      "downloads": 696,
+      "likes": 19,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "gokulkarthik/xlm-roberta-qa-chaii",
+      "task": "question-answering",
+      "downloads": 667,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "TARUNBHATT/flan-t5-small-finetuned-squad",
+      "task": "question-answering",
+      "downloads": 666,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "valhalla/longformer-base-4096-finetuned-squadv1",
+      "task": "question-answering",
+      "downloads": 662,
+      "likes": 22,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "SmallDoge/Doge-160M-Instruct",
+      "task": "question-answering",
+      "downloads": 642,
+      "likes": 12,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "SmallDoge/Doge-60M-Instruct",
+      "task": "question-answering",
+      "downloads": 638,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "uclanlp/visualbert-vqa",
+      "task": "question-answering",
+      "downloads": 633,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    }
+  ],
+  "summarization": [
+    {
+      "id": "google-t5/t5-small",
+      "task": "summarization",
+      "downloads": 2229847,
+      "likes": 542,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "facebook/bart-large-cnn",
+      "task": "summarization",
+      "downloads": 1952735,
+      "likes": 1569,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "google-t5/t5-base",
+      "task": "summarization",
+      "downloads": 1409511,
+      "likes": 774,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "sshleifer/distilbart-cnn-12-6",
+      "task": "summarization",
+      "downloads": 901117,
+      "likes": 317,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google-t5/t5-3b",
+      "task": "summarization",
+      "downloads": 688904,
+      "likes": 52,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 3.0,
+      "estimated_vram_gb": 6.0
+    },
+    {
+      "id": "google-t5/t5-large",
+      "task": "summarization",
+      "downloads": 552213,
+      "likes": 257,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "google/pegasus-xsum",
+      "task": "summarization",
+      "downloads": 291602,
+      "likes": 219,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "philschmid/bart-large-cnn-samsum",
+      "task": "summarization",
+      "downloads": 172591,
+      "likes": 267,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "human-centered-summarization/financial-summarization-pegasus",
+      "task": "summarization",
+      "downloads": 109614,
+      "likes": 141,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "moussaKam/mbarthez",
+      "task": "summarization",
+      "downloads": 96609,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "knkarthick/MEETING_SUMMARY",
+      "task": "summarization",
+      "downloads": 77902,
+      "likes": 196,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "csebuetnlp/mT5_multilingual_XLSum",
+      "task": "summarization",
+      "downloads": 48432,
+      "likes": 325,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "EbanLee/kobart-summary-v3",
+      "task": "summarization",
+      "downloads": 44181,
+      "likes": 22,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ARTeLab/mbart-summarization-fanpage",
+      "task": "summarization",
+      "downloads": 40835,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "optimum/t5-small",
+      "task": "summarization",
+      "downloads": 40401,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "sshleifer/distilbart-cnn-6-6",
+      "task": "summarization",
+      "downloads": 26398,
+      "likes": 33,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google/pegasus-large",
+      "task": "summarization",
+      "downloads": 25951,
+      "likes": 105,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "Xenova/distilbart-cnn-6-6",
+      "task": "summarization",
+      "downloads": 21315,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "onnx"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google-t5/t5-11b",
+      "task": "summarization",
+      "downloads": 18190,
+      "likes": 69,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "cnicu/t5-small-booksum",
+      "task": "summarization",
+      "downloads": 16207,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "RussianNLP/FRED-T5-Summarizer",
+      "task": "summarization",
+      "downloads": 12378,
+      "likes": 27,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Falconsai/text_summarization",
+      "task": "summarization",
+      "downloads": 12377,
+      "likes": 292,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "IlyaGusev/rut5_base_sum_gazeta",
+      "task": "summarization",
+      "downloads": 11847,
+      "likes": 18,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cahya/t5-base-indonesian-summarization-cased",
+      "task": "summarization",
+      "downloads": 10844,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "d0rj/rut5-base-summ",
+      "task": "summarization",
+      "downloads": 10404,
+      "likes": 25,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google/pegasus-cnn_dailymail",
+      "task": "summarization",
+      "downloads": 10216,
+      "likes": 110,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "VietAI/vit5-base",
+      "task": "summarization",
+      "downloads": 8351,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "allegro/plt5-large",
+      "task": "summarization",
+      "downloads": 8258,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "allegro/plt5-base",
+      "task": "summarization",
+      "downloads": 7879,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "sshleifer/distilbart-xsum-12-6",
+      "task": "summarization",
+      "downloads": 7379,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "IMISLab/GreekT5-umt5-small-greeksum",
+      "task": "summarization",
+      "downloads": 6658,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "lidiya/bart-large-xsum-samsum",
+      "task": "summarization",
+      "downloads": 6561,
+      "likes": 38,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "IMISLab/GreekT5-umt5-base-greeksum",
+      "task": "summarization",
+      "downloads": 6531,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "allegro/plt5-small",
+      "task": "summarization",
+      "downloads": 6443,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "facebook/bart-large-xsum",
+      "task": "summarization",
+      "downloads": 6419,
+      "likes": 36,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "IMISLab/GreekWiki-umt5-base",
+      "task": "summarization",
+      "downloads": 6339,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "VietAI/vit5-large-vietnews-summarization",
+      "task": "summarization",
+      "downloads": 5414,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "cointegrated/rut5-base-absum",
+      "task": "summarization",
+      "downloads": 4882,
+      "likes": 31,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "RUCAIBox/mvp",
+      "task": "summarization",
+      "downloads": 4389,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google/bigbird-pegasus-large-arxiv",
+      "task": "summarization",
+      "downloads": 4195,
+      "likes": 64,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "yatharth97/T5-base-10K-summarization",
+      "task": "summarization",
+      "downloads": 3656,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "pszemraj/led-large-book-summary",
+      "task": "summarization",
+      "downloads": 3553,
+      "likes": 121,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "echarlaix/t5-small-openvino",
+      "task": "summarization",
+      "downloads": 3512,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "VietAI/vit5-base-vietnews-summarization",
+      "task": "summarization",
+      "downloads": 3508,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deutsche-telekom/mt5-small-sum-de-mit-v1",
+      "task": "summarization",
+      "downloads": 3341,
+      "likes": 13,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "Sachin21112004/distilbart-news-summarizer",
+      "task": "summarization",
+      "downloads": 3074,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "IlyaGusev/rut5_base_headline_gen_telegram",
+      "task": "summarization",
+      "downloads": 3023,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Falconsai/medical_summarization",
+      "task": "summarization",
+      "downloads": 2813,
+      "likes": 151,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "eenzeenee/t5-base-korean-summarization",
+      "task": "summarization",
+      "downloads": 2677,
+      "likes": 34,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "csebuetnlp/mT5_m2o_arabic_crossSum",
+      "task": "summarization",
+      "downloads": 2324,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mradermacher/Hacker-News-Comments-Summarization-Llama-3.1-8B-Instruct-i1-GGUF",
+      "task": "summarization",
+      "downloads": 2060,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "morenolq/LEGIT-BART-LSG-4096",
+      "task": "summarization",
+      "downloads": 1977,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "deutsche-telekom/mt5-small-sum-de-en-v1",
+      "task": "summarization",
+      "downloads": 1971,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "VietAI/envit5-base",
+      "task": "summarization",
+      "downloads": 1940,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "behbudiy/Mistral-7B-Instruct-Uz",
+      "task": "summarization",
+      "downloads": 1814,
+      "likes": 14,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "AlicanKiraz0/Kara-Kumru-v1.0-2B",
+      "task": "summarization",
+      "downloads": 1789,
+      "likes": 20,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mattritchey/next-1b-Q4_K_M-GGUF",
+      "task": "summarization",
+      "downloads": 1719,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "thanathorn/mt5-cpe-kmutt-thai-sentence-sum",
+      "task": "summarization",
+      "downloads": 1550,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "recogna-nlp/ptt5-base-summ-xlsum",
+      "task": "summarization",
+      "downloads": 1517,
+      "likes": 17,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "stratosphere/qwen2.5-1.5b-slips-immune-summarization",
+      "task": "summarization",
+      "downloads": 1430,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.5,
+      "estimated_vram_gb": 3.0
+    },
+    {
+      "id": "gsarti/it5-base-news-summarization",
+      "task": "summarization",
+      "downloads": 1336,
+      "likes": 6,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "moussaKam/AraBART",
+      "task": "summarization",
+      "downloads": 1335,
+      "likes": 17,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "sshleifer/distilbart-xsum-1-1",
+      "task": "summarization",
+      "downloads": 1314,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "thelamapi/next-1b",
+      "task": "summarization",
+      "downloads": 1290,
+      "likes": 27,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 1.0,
+      "estimated_vram_gb": 2.0
+    },
+    {
+      "id": "lyutovad/mbart50-tradenewssum",
+      "task": "summarization",
+      "downloads": 1287,
+      "likes": 4,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mrm8488/bert2bert_shared-spanish-finetuned-summarization",
+      "task": "summarization",
+      "downloads": 1286,
+      "likes": 32,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "pszemraj/led-base-book-summary",
+      "task": "summarization",
+      "downloads": 1218,
+      "likes": 64,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Lamapi/next-4b-Q4_K_M-GGUF",
+      "task": "summarization",
+      "downloads": 1218,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "pszemraj/pegasus-x-large-book-summary",
+      "task": "summarization",
+      "downloads": 1169,
+      "likes": 37,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "mradermacher/Medra4b-i1-GGUF",
+      "task": "summarization",
+      "downloads": 1145,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "knowledgator/gliner-multitask-large-v0.5",
+      "task": "summarization",
+      "downloads": 993,
+      "likes": 138,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "mradermacher/Hacker-News-Comments-Summarization-gemma-3-27b-it-GGUF",
+      "task": "summarization",
+      "downloads": 986,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 7.0,
+      "estimated_vram_gb": 14.0
+    },
+    {
+      "id": "alaggung/bart-r3f",
+      "task": "summarization",
+      "downloads": 979,
+      "likes": 8,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "suriya7/bart-finetuned-text-summarization",
+      "task": "summarization",
+      "downloads": 970,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Guilherme34/Medra4b-abliterated-i1-VISION-GGUF",
+      "task": "summarization",
+      "downloads": 958,
+      "likes": 1,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "IlyaGusev/mbart_ru_sum_gazeta",
+      "task": "summarization",
+      "downloads": 938,
+      "likes": 66,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "cahya/bert2bert-indonesian-summarization",
+      "task": "summarization",
+      "downloads": 845,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Phil2Sat/T5XXL-Unchained-GGUF",
+      "task": "summarization",
+      "downloads": 818,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "plguillou/t5-base-fr-sum-cnndm",
+      "task": "summarization",
+      "downloads": 771,
+      "likes": 23,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "nsi319/legal-pegasus",
+      "task": "summarization",
+      "downloads": 754,
+      "likes": 15,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Lamapi/next-12b-Q4_K_M-GGUF",
+      "task": "summarization",
+      "downloads": 748,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google/bigbird-pegasus-large-pubmed",
+      "task": "summarization",
+      "downloads": 729,
+      "likes": 47,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "DunnBC22/pegasus-multi_news-NewsSummarization_BBC",
+      "task": "summarization",
+      "downloads": 701,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mradermacher/Clinician-Note-2.0a-i1-GGUF",
+      "task": "summarization",
+      "downloads": 694,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "nsi319/legal-led-base-16384",
+      "task": "summarization",
+      "downloads": 628,
+      "likes": 17,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "Tavernari/git-commit-message",
+      "task": "summarization",
+      "downloads": 627,
+      "likes": 23,
+      "last_modified": "2023-01-01",
+      "tags": [],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "eenzeenee/t5-small-korean-summarization",
+      "task": "summarization",
+      "downloads": 601,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "nandakishormpai/t5-small-machine-articles-tag-generation",
+      "task": "summarization",
+      "downloads": 597,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.06,
+      "estimated_vram_gb": 0.12
+    },
+    {
+      "id": "moussaKam/barthez-orangesum-abstract",
+      "task": "summarization",
+      "downloads": 580,
+      "likes": 7,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "ainize/kobart-news",
+      "task": "summarization",
+      "downloads": 579,
+      "likes": 18,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "moussaKam/barthez",
+      "task": "summarization",
+      "downloads": 576,
+      "likes": 19,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "DISLab/SummLlama3.1-8B",
+      "task": "summarization",
+      "downloads": 534,
+      "likes": 12,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "VietAI/vit5-large",
+      "task": "summarization",
+      "downloads": 532,
+      "likes": 5,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "jax"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.35,
+      "estimated_vram_gb": 0.7
+    },
+    {
+      "id": "pengold/t5-vietnamese-summarization",
+      "task": "summarization",
+      "downloads": 514,
+      "likes": 3,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "google/pegasus-pubmed",
+      "task": "summarization",
+      "downloads": 510,
+      "likes": 9,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "IDEA-CCNL/Randeng-Pegasus-238M-Summary-Chinese",
+      "task": "summarization",
+      "downloads": 510,
+      "likes": 49,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mradermacher/Medra4b-abliterated-i1-GGUF",
+      "task": "summarization",
+      "downloads": 499,
+      "likes": 0,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "mradermacher/next-12b-i1-GGUF",
+      "task": "summarization",
+      "downloads": 485,
+      "likes": 2,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "pszemraj/long-t5-tglobal-base-16384-book-summary",
+      "task": "summarization",
+      "downloads": 475,
+      "likes": 136,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "onnx",
+        "safetensors"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    },
+    {
+      "id": "patrickvonplaten/bert2bert_cnn_daily_mail",
+      "task": "summarization",
+      "downloads": 448,
+      "likes": 10,
+      "last_modified": "2023-01-01",
+      "tags": [
+        "pytorch",
+        "en"
+      ],
+      "is_gated": false,
+      "estimated_params_b": 0.11,
+      "estimated_vram_gb": 0.22
+    }
+  ]
+}

@@ -6,15 +6,10 @@ import wandb
 import torch
 from typing import List
 
-# ==============================================================================
-# GUARDRAIL 1: THE LIBRARY BYPASS
-# We must import the pure Hugging Face trainer BEFORE Unsloth has a chance 
-# to hijack it and inject its broken 'args' code.
-# ==============================================================================
+# 1. Standard, Enterprise-Grade Imports (No Unsloth)
 from trl import PPOConfig, PPOTrainer 
-PurePPOTrainer = PPOTrainer  
-
-from unsloth import FastLanguageModel
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from peft import LoraConfig, get_peft_model
 
 # ─── CONFIGURATION ──────────────────────────────────────────
 DEBUG_MODE = True # KEEP TRUE FOR YOUR FIRST COLAB TEST
@@ -31,34 +26,46 @@ else:
 def setup_wandb():
     wandb.init(
         project="hf-hub-orchestrator",
-        name="ppo-hardened-training",
+        name="ppo-native-training",
         config={
             "model": "Qwen/Qwen2.5-1.5B-Instruct",
-            "algorithm": "PPO (Indestructible Loop)",
+            "algorithm": "PPO (Native HF)",
             "total_episodes": sum(PHASE_EPISODES)
         }
     )
 
 def load_model():
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name="unsloth/Qwen2.5-1.5B-Instruct",
-        max_seq_length=2048,
+    print("Loading model natively via BitsAndBytes 4-bit...")
+    
+    # 1. Configure 4-bit quantization natively
+    bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
-        dtype=None,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.float16,
     )
     
+    # 2. Load the base model directly to the GPU
+    model = AutoModelForCausalLM.from_pretrained(
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        quantization_config=bnb_config,
+        device_map="cuda"
+    )
+    
+    tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct")
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
         
-    model = FastLanguageModel.get_peft_model(
-        model,
+    # 3. Apply standard LoRA adapters
+    lora_config = LoraConfig(
         r=16,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
         lora_alpha=16,
-        lora_dropout=0.0, # 0.0 enables 2x faster Unsloth speeds
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        lora_dropout=0.05,
         bias="none",
-        use_gradient_checkpointing=True,
+        task_type="CAUSAL_LM"
     )
+    model = get_peft_model(model, lora_config)
+    
     return model, tokenizer
 
 def build_prompt(observation: dict, tokenizer) -> str:
@@ -154,15 +161,10 @@ def train_phase(model, tokenizer, trainer, env, phase_name, episodes, chaos_enab
             responses = [step["response"] for step in batch]
             rewards = [step["reward"] for step in batch]
             
-            # ==================================================================
-            # GUARDRAIL 2: ANTI-CRASH MATRIX
-            # If PyTorch hits a math error or OOM, we drop the batch, clear 
-            # the VRAM cache, and keep the loop alive.
-            # ==================================================================
             try:
                 trainer.step(queries, responses, rewards)
             except Exception as e:
-                print(f"⚠️ [WARNING] Math/GPU Error caught on batch. Skipping to save loop. Error: {e}")
+                print(f"⚠️ [WARNING] Math Error caught on batch. Skipping to save loop. Error: {e}")
                 torch.cuda.empty_cache()
                 continue
             
@@ -186,16 +188,11 @@ def main():
         gradient_accumulation_steps=4,
     )
     
-    # Using the Pure bypassed trainer!
-    trainer = PurePPOTrainer(config=config, model=model, tokenizer=tokenizer)
+    trainer = PPOTrainer(config=config, model=model, tokenizer=tokenizer)
     
     from environment.env import HFOrchestratorEnv
     env = HFOrchestratorEnv()
     
-    # ==================================================================
-    # GUARDRAIL 3: EMERGENCY AUTO-SAVE
-    # Catches Colab timeouts and user aborts to save weights before dying.
-    # ==================================================================
     try:
         train_phase(model, tokenizer, trainer, env, "Phase1_Happy", PHASE_EPISODES[0], False, 0)
         train_phase(model, tokenizer, trainer, env, "Phase2_Hard", PHASE_EPISODES[1], False, PHASE_EPISODES[0])

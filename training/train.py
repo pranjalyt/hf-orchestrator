@@ -63,8 +63,8 @@ def load_model():
         device_map="cuda" 
     )
 
-    # 2. CRITICAL FIX: Prepare for 4-bit gradients
-    base_model = prepare_model_for_kbit_training(base_model)
+   # 2. CRITICAL FIX: Prepare for 4-bit gradients (Prevents OOM and grad errors)
+    base_model = prepare_model_for_kbit_training(base_model, use_gradient_checkpointing=False)
 
     # 3. Apply LoRA explicitly
     peft_model = get_peft_model(base_model, lora_config)
@@ -234,7 +234,7 @@ def main():
     model, tokenizer = load_model()
     
     config = PPOConfig(
-        learning_rate=5e-6,
+        learning_rate=1e-6,
         batch_size=8,                  # The total pool of steps to collect
         mini_batch_size=1,             # Only 1 step in VRAM at a time (Max memory safety)
         gradient_accumulation_steps=8, # Accumulate 8 times to stabilize the learning

@@ -71,6 +71,7 @@ def load_model():
 
     # 4. Wrap with the PPO Value Head
     model = AutoModelForCausalLMWithValueHead(peft_model)
+    model.is_peft_model = True
     
     tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct")
     if tokenizer.pad_token is None:
@@ -118,7 +119,7 @@ def run_episode(model, tokenizer, env, chaos_enabled=False):
     done = False
     
     while not done and env._state.steps_used < MAX_STEPS:
-        prompt = build_prompt(obs.dict(), tokenizer)
+        prompt = build_prompt(obs.model_dump(), tokenizer)
         inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
         
         with torch.no_grad():

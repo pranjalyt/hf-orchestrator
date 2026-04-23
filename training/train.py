@@ -233,6 +233,7 @@ def main():
         train_phase(model, tokenizer, trainer, env, "Phase3_Chaos", PHASE_EPISODES[2], True, PHASE_EPISODES[0]+PHASE_EPISODES[1])
         
         print("\n✅ Training Complete! Saving final weights...")
+        os.makedirs("checkpoints/final", exist_ok=True)
         model.save_pretrained("checkpoints/final")
         tokenizer.save_pretrained("checkpoints/final")
         

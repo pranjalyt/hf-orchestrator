@@ -100,12 +100,28 @@ Choose next action."""
     return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
 def parse_action(model_output: str) -> dict:
+    """
+    Parses LLM output into a structured action.
+    Indestructible: Will never crash the training loop, no matter what Qwen hallucinates.
+    """
     import re
     try:
+        # Attempt 1: Perfect JSON
         return json.loads(model_output.strip())
-    except:
+    except Exception:
+        # Attempt 2: Qwen added conversational text, try to extract just the JSON block
         json_match = re.search(r'\{.*\}', model_output, re.DOTALL)
-        return json.loads(json_match.group()) if json_match else {"action": "abort_pipeline", "instruction": "Format Error"}
+        if json_match:
+            try:
+                # We MUST wrap this in a try/except in case the extracted block uses 
+                # single quotes or has syntax errors.
+                return json.loads(json_match.group())
+            except Exception:
+                pass
+                
+    # Ultimate Fallback: Qwen completely failed to format.
+    # We gracefully penalize it in the Gym instead of crashing the Python script.
+    return {"action": "abort_pipeline", "instruction": "Format Error"}
 
 # ─── PPO TRAINING ENGINE ────────────────────────────────────
 

@@ -77,6 +77,10 @@ def load_model():
     # 4. Wrap with the PPO Value Head
     model = AutoModelForCausalLMWithValueHead(peft_model)
     model.is_peft_model = True 
+
+    # ─── RECONNECT THE BRAIN (POST-WRAPPER) ─────────────────────────
+    # We must call this on the internal pretrained model so PyTorch sees it
+    model.pretrained_model.enable_input_require_grads()
     
     # ─── NEW: UNFREEZE THE VALUE HEAD ───────────────────────────────
     # Ensure the newly attached Critic network is actually allowed to learn
@@ -231,10 +235,11 @@ def main():
     model, tokenizer = load_model()
     
     config = PPOConfig(
-        learning_rate=1.41e-5,
+        learning_rate=5e-6,
         batch_size=8,                  # The total pool of steps to collect
         mini_batch_size=1,             # Only 1 step in VRAM at a time (Max memory safety)
         gradient_accumulation_steps=8, # Accumulate 8 times to stabilize the learning
+        max_grad_norm=0.5, 
         optimize_cuda_cache=True,
     )
     # Force garbage collection before training

@@ -190,11 +190,17 @@ def main():
     
     config = PPOConfig(
         learning_rate=1.41e-5,
-        batch_size=4,
+        batch_size=2, #from 4
         mini_batch_size=1,
-        gradient_accumulation_steps=4,
+        gradient_accumulation_steps=8, #from 4
+        optimize_cuda_cache=True,
     )
-    
+    # Force garbage collection before training
+    import gc
+    gc.collect()
+    torch.cuda.empty_cache()
+
+
     trainer = PPOTrainer(config=config, model=model, tokenizer=tokenizer)
     
     from environment.env import HFOrchestratorEnv

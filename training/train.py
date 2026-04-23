@@ -190,9 +190,9 @@ def main():
     
     config = PPOConfig(
         learning_rate=1.41e-5,
-        batch_size=2, #from 4
-        mini_batch_size=1,
-        gradient_accumulation_steps=8, #from 4
+        batch_size=8,                  # The total pool of steps to collect
+        mini_batch_size=1,             # Only 1 step in VRAM at a time (Max memory safety)
+        gradient_accumulation_steps=8, # Accumulate 8 times to stabilize the learning
         optimize_cuda_cache=True,
     )
     # Force garbage collection before training

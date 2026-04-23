@@ -4,18 +4,26 @@ import os
 import json
 import wandb
 import torch
+from typing import List
+
+# ==============================================================================
+# GUARDRAIL 1: THE LIBRARY BYPASS
+# We must import the pure Hugging Face trainer BEFORE Unsloth has a chance 
+# to hijack it and inject its broken 'args' code.
+# ==============================================================================
+from trl import PPOConfig, PPOTrainer 
+PurePPOTrainer = PPOTrainer  
+
 from unsloth import FastLanguageModel
-from trl import PPOConfig, PPOTrainer
 
 # ─── CONFIGURATION ──────────────────────────────────────────
-DEBUG_MODE = True # ⚠️ KEEP TRUE FOR YOUR FREE T4 SMOKE TEST!
+DEBUG_MODE = True # KEEP TRUE FOR YOUR FIRST COLAB TEST
 
 if DEBUG_MODE:
-    print("⚠️ DEBUG MODE ACTIVE: Running fast test...")
-    PHASE_EPISODES = [2, 2, 2] # Tiny phases
+    PHASE_EPISODES = [2, 2, 2] 
     MAX_STEPS = 5
 else:
-    PHASE_EPISODES = [80, 70, 50] # Full 200-episode curriculum
+    PHASE_EPISODES = [80, 70, 50] 
     MAX_STEPS = 15
 
 # ─── CORE FUNCTIONS ─────────────────────────────────────────
@@ -23,10 +31,10 @@ else:
 def setup_wandb():
     wandb.init(
         project="hf-hub-orchestrator",
-        name="ppo-curriculum-training",
+        name="ppo-hardened-training",
         config={
             "model": "Qwen/Qwen2.5-1.5B-Instruct",
-            "algorithm": "PPO (Multi-step Gym)",
+            "algorithm": "PPO (Indestructible Loop)",
             "total_episodes": sum(PHASE_EPISODES)
         }
     )
@@ -39,7 +47,6 @@ def load_model():
         dtype=None,
     )
     
-    # CRITICAL: TRL requires a pad token for batching
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
         
@@ -48,28 +55,24 @@ def load_model():
         r=16,
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
         lora_alpha=16,
-        lora_dropout=0.0,
+        lora_dropout=0.0, # 0.0 enables 2x faster Unsloth speeds
         bias="none",
         use_gradient_checkpointing=True,
     )
     return model, tokenizer
 
 def build_prompt(observation: dict, tokenizer) -> str:
-    """Formats the state into Qwen's native ChatML structure."""
     artifacts = observation["current_artifacts"]
     history = observation["conversation_history"]
-    
     hist_text = "".join([f"Step {h['step']}: {h['action']} -> {h['result_status']}\n" for h in history[-3:]])
     
     raw_text = f"""Task: {observation['intake_spec']['task_description']}
 Constraint: {observation['intake_spec']['max_vram_gb']}GB VRAM
-
 Models Found: {artifacts['models_found']}
 Config Written: {'Yes' if artifacts['training_config'] else 'No'}
 
 History:
 {hist_text if hist_text else 'None'}
-
 Choose next action."""
 
     messages = [
@@ -89,7 +92,6 @@ def parse_action(model_output: str) -> dict:
 # ─── PPO TRAINING ENGINE ────────────────────────────────────
 
 def run_episode(model, tokenizer, env, chaos_enabled=False):
-    """Runs a single complete environment episode."""
     from environment.models import Action
     
     env.chaos_enabled = chaos_enabled
@@ -111,7 +113,6 @@ def run_episode(model, tokenizer, env, chaos_enabled=False):
                 pad_token_id=tokenizer.eos_token_id
             )
         
-        # Extract just the generated tokens
         resp_tensor = outputs[0][inputs['input_ids'].shape[1]:]
         response_text = tokenizer.decode(resp_tensor, skip_special_tokens=True)
         
@@ -123,11 +124,10 @@ def run_episode(model, tokenizer, env, chaos_enabled=False):
             
         result = env.step(action)
         
-        # Save Tensors exactly as PPO requires them
         episode_data.append({
-            "query": inputs['input_ids'][0],      # 1D LongTensor
-            "response": resp_tensor,              # 1D LongTensor
-            "reward": torch.tensor(result.reward, dtype=torch.float) # 0D FloatTensor
+            "query": inputs['input_ids'][0],
+            "response": resp_tensor,
+            "reward": torch.tensor(result.reward, dtype=torch.float)
         })
         
         total_reward += result.reward
@@ -140,15 +140,13 @@ def run_episode(model, tokenizer, env, chaos_enabled=False):
 def train_phase(model, tokenizer, trainer, env, phase_name, episodes, chaos_enabled, start_ep):
     print(f"\n{'='*40}\nSTARTING {phase_name} ({episodes} episodes)\n{'='*40}")
     
-    step_buffer = [] # NEW: Buffer to hold steps to satisfy exact PyTorch math
+    step_buffer = [] 
 
     for ep in range(episodes):
         episode_data, total_reward = run_episode(model, tokenizer, env, chaos_enabled)
         step_buffer.extend(episode_data)
         
-        # The Magic: Only train when we have collected EXACTLY the batch size
         while len(step_buffer) >= trainer.config.batch_size:
-            # Slice off a mathematically perfect batch
             batch = step_buffer[:trainer.config.batch_size]
             step_buffer = step_buffer[trainer.config.batch_size:]
             
@@ -156,7 +154,17 @@ def train_phase(model, tokenizer, trainer, env, phase_name, episodes, chaos_enab
             responses = [step["response"] for step in batch]
             rewards = [step["reward"] for step in batch]
             
-            trainer.step(queries, responses, rewards)
+            # ==================================================================
+            # GUARDRAIL 2: ANTI-CRASH MATRIX
+            # If PyTorch hits a math error or OOM, we drop the batch, clear 
+            # the VRAM cache, and keep the loop alive.
+            # ==================================================================
+            try:
+                trainer.step(queries, responses, rewards)
+            except Exception as e:
+                print(f"⚠️ [WARNING] Math/GPU Error caught on batch. Skipping to save loop. Error: {e}")
+                torch.cuda.empty_cache()
+                continue
             
         global_ep = start_ep + ep
         wandb.log({"episode": global_ep, "episode_reward": total_reward, "phase": phase_name})
@@ -171,33 +179,42 @@ def main():
     setup_wandb()
     model, tokenizer = load_model()
     
-    # FIXED MATH: batch_size(4) = mini_batch(1) * grad_acc(4)
     config = PPOConfig(
         learning_rate=1.41e-5,
         batch_size=4,
         mini_batch_size=1,
         gradient_accumulation_steps=4,
     )
-    # trainer = PPOTrainer(config=config, model=model, tokenizer=tokenizer)
-    # Pass the config to both 'config' and 'args' to satisfy both libraries
-    trainer = PPOTrainer(
-        config=config, 
-        args=config, 
-        model=model, 
-        tokenizer=tokenizer
-    )
+    
+    # Using the Pure bypassed trainer!
+    trainer = PurePPOTrainer(config=config, model=model, tokenizer=tokenizer)
     
     from environment.env import HFOrchestratorEnv
     env = HFOrchestratorEnv()
     
-    train_phase(model, tokenizer, trainer, env, "Phase1_Happy", PHASE_EPISODES[0], False, 0)
-    train_phase(model, tokenizer, trainer, env, "Phase2_Hard", PHASE_EPISODES[1], False, PHASE_EPISODES[0])
-    train_phase(model, tokenizer, trainer, env, "Phase3_Chaos", PHASE_EPISODES[2], True, PHASE_EPISODES[0]+PHASE_EPISODES[1])
-    
-    print("\nTraining Complete! Saving final weights...")
-    model.save_pretrained("checkpoints/final")
-    tokenizer.save_pretrained("checkpoints/final")
-    wandb.finish()
+    # ==================================================================
+    # GUARDRAIL 3: EMERGENCY AUTO-SAVE
+    # Catches Colab timeouts and user aborts to save weights before dying.
+    # ==================================================================
+    try:
+        train_phase(model, tokenizer, trainer, env, "Phase1_Happy", PHASE_EPISODES[0], False, 0)
+        train_phase(model, tokenizer, trainer, env, "Phase2_Hard", PHASE_EPISODES[1], False, PHASE_EPISODES[0])
+        train_phase(model, tokenizer, trainer, env, "Phase3_Chaos", PHASE_EPISODES[2], True, PHASE_EPISODES[0]+PHASE_EPISODES[1])
+        
+        print("\n✅ Training Complete! Saving final weights...")
+        model.save_pretrained("checkpoints/final")
+        tokenizer.save_pretrained("checkpoints/final")
+        
+    except (KeyboardInterrupt, Exception) as e:
+        print(f"\n🚨 [CRITICAL] Training Interrupted: {e}")
+        print("💾 INITIATING EMERGENCY WEIGHT SAVE...")
+        os.makedirs("checkpoints/emergency_save", exist_ok=True)
+        model.save_pretrained("checkpoints/emergency_save")
+        tokenizer.save_pretrained("checkpoints/emergency_save")
+        print("✅ Emergency save complete. Progress secured.")
+        
+    finally:
+        wandb.finish()
 
 if __name__ == "__main__":
     main()

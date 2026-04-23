@@ -63,15 +63,27 @@ def load_model():
         device_map="cuda" 
     )
 
-    # 2. CRITICAL FIX: Prepare for 4-bit gradients (Prevents OOM and grad errors)
+    # 2. CRITICAL FIX: Prepare for 4-bit gradients
     base_model = prepare_model_for_kbit_training(base_model)
 
     # 3. Apply LoRA explicitly
     peft_model = get_peft_model(base_model, lora_config)
+    
+    # ─── NEW: THE GRADIENT LIFELINE ─────────────────────────────────
+    # This forces PyTorch to track gradients through the frozen 4-bit layers
+    peft_model.enable_input_require_grads()
+    # ────────────────────────────────────────────────────────────────
 
     # 4. Wrap with the PPO Value Head
     model = AutoModelForCausalLMWithValueHead(peft_model)
-    model.is_peft_model = True
+    model.is_peft_model = True 
+    
+    # ─── NEW: UNFREEZE THE VALUE HEAD ───────────────────────────────
+    # Ensure the newly attached Critic network is actually allowed to learn
+    for name, param in model.named_parameters():
+        if "v_head" in name:
+            param.requires_grad = True
+    # ────────────────────────────────────────────────────────────────
     
     tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct")
     if tokenizer.pad_token is None:
@@ -149,8 +161,17 @@ def run_episode(model, tokenizer, env, chaos_enabled=False):
         
         resp_tensor = outputs[0][inputs['input_ids'].shape[1]:]
         response_text = tokenizer.decode(resp_tensor, skip_special_tokens=True)
+
+        # ─── NEW: X-RAY VISION DEBUGGER ─────────────────────────────────
+        print(f"\n[DEBUG] Raw LLM Output: {response_text.strip()[:100]}...")
+        # ────────────────────────────────────────────────────────────────
         
         action_dict = parse_action(response_text)
+
+        # ─── NEW: X-RAY VISION DEBUGGER ─────────────────────────────────
+        print(f"[DEBUG] Parsed Action: {action_dict}")
+        # ────────────────────────────────────────────────────────────────
+
         try:
             action = Action(action=action_dict.get("action", "abort_pipeline"), instruction=action_dict.get("instruction", ""))
         except:

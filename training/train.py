@@ -68,24 +68,23 @@ def load_model():
 
     # 3. Apply LoRA explicitly
     peft_model = get_peft_model(base_model, lora_config)
-    
-    # ─── NEW: THE GRADIENT LIFELINE ─────────────────────────────────
-    # This forces PyTorch to track gradients through the frozen 4-bit layers
-    peft_model.enable_input_require_grads()
-    # ────────────────────────────────────────────────────────────────
 
-    # 4. Wrap with the PPO Value Head
+    # 4. Wrap with the PPO Value Head FIRST
     model = AutoModelForCausalLMWithValueHead(peft_model)
     model.is_peft_model = True 
-
-    # ─── RECONNECT THE BRAIN (POST-WRAPPER) ─────────────────────────
-    # We must call this on the internal pretrained model so PyTorch sees it
-    model.pretrained_model.enable_input_require_grads()
     
-    # ─── NEW: UNFREEZE THE VALUE HEAD ───────────────────────────────
-    # Ensure the newly attached Critic network is actually allowed to learn
+    # ─── THE ULTIMATE GRADIENT LIFELINE (FORWARD HOOK) ──────────────
+    # This completely eliminates the "Gradients will be None" warning.
+    # We force the very first layer to output tensors that track gradients, 
+    # ensuring the math survives the 4-bit checkpointing process.
+    def make_inputs_require_grad(module, input, output):
+        output.requires_grad_(True)
+        
+    model.pretrained_model.get_input_embeddings().register_forward_hook(make_inputs_require_grad)
+    
+    # Unfreeze the Critic so the Value Head can learn
     for name, param in model.named_parameters():
-        if "v_head" in name:
+        if "v_head" in name or "score" in name:
             param.requires_grad = True
     # ────────────────────────────────────────────────────────────────
     

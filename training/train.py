@@ -178,7 +178,14 @@ def main():
         mini_batch_size=1,
         gradient_accumulation_steps=4,
     )
-    trainer = PPOTrainer(config=config, model=model, tokenizer=tokenizer)
+    # trainer = PPOTrainer(config=config, model=model, tokenizer=tokenizer)
+    # Pass the config to both 'config' and 'args' to satisfy both libraries
+    trainer = PPOTrainer(
+        config=config, 
+        args=config, 
+        model=model, 
+        tokenizer=tokenizer
+    )
     
     from environment.env import HFOrchestratorEnv
     env = HFOrchestratorEnv()

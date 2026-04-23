@@ -8,8 +8,8 @@ from typing import List
 
 # 1. Standard, Enterprise-Grade Imports (No Unsloth)
 from trl import PPOConfig, PPOTrainer, AutoModelForCausalLMWithValueHead
-from transformers import AutoTokenizer, BitsAndBytesConfig
-from peft import LoraConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
 # ─── CONFIGURATION ──────────────────────────────────────────
 DEBUG_MODE = True # KEEP TRUE FOR YOUR FIRST COLAB TEST
@@ -37,25 +37,12 @@ def setup_wandb():
 def load_model():
     print("Loading model natively via BitsAndBytes 4-bit...")
     
-    # 1. Configure 4-bit quantization natively
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
         bnb_4bit_compute_dtype=torch.float16,
     )
     
-    # 2. Load the base model directly to the GPU
-    model = AutoModelForCausalLM.from_pretrained(
-        "Qwen/Qwen2.5-1.5B-Instruct",
-        quantization_config=bnb_config,
-        device_map="cuda"
-    )
-    
-    tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct")
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-        
-    # 3. Apply standard LoRA adapters
     lora_config = LoraConfig(
         r=16,
         lora_alpha=16,
@@ -64,14 +51,22 @@ def load_model():
         bias="none",
         task_type="CAUSAL_LM"
     )
-    # The Fix: We load directly into the ValueHead wrapper, and TRL automatically 
-    # applies our 4-bit config and LoRA adapters perfectly.
-    model = AutoModelForCausalLMWithValueHead.from_pretrained(
+
+    # 1. Load the Base Model correctly mapped to the GPU (Do NOT use "auto")
+    base_model = AutoModelForCausalLM.from_pretrained(
         "Qwen/Qwen2.5-1.5B-Instruct",
         quantization_config=bnb_config,
-        peft_config=lora_config,
-        device_map="cuda"
+        device_map="cuda" 
     )
+
+    # 2. CRITICAL FIX: Prepare for 4-bit gradients (Prevents OOM and grad errors)
+    base_model = prepare_model_for_kbit_training(base_model)
+
+    # 3. Apply LoRA explicitly
+    peft_model = get_peft_model(base_model, lora_config)
+
+    # 4. Wrap with the PPO Value Head
+    model = AutoModelForCausalLMWithValueHead(peft_model)
     
     tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct")
     if tokenizer.pad_token is None:
@@ -145,7 +140,8 @@ def run_episode(model, tokenizer, env, chaos_enabled=False):
         episode_data.append({
             "query": inputs['input_ids'][0],
             "response": resp_tensor,
-            "reward": torch.tensor(result.reward, dtype=torch.float)
+            # CRITICAL FIX: Push the reward to the GPU, otherwise PyTorch crashes
+            "reward": torch.tensor(result.reward, dtype=torch.float, device="cuda")
         })
         
         total_reward += result.reward

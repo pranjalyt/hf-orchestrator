@@ -7,9 +7,9 @@ import torch
 from typing import List
 
 # 1. Standard, Enterprise-Grade Imports (No Unsloth)
-from trl import PPOConfig, PPOTrainer 
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-from peft import LoraConfig, get_peft_model
+from trl import PPOConfig, PPOTrainer, AutoModelForCausalLMWithValueHead
+from transformers import AutoTokenizer, BitsAndBytesConfig
+from peft import LoraConfig
 
 # ─── CONFIGURATION ──────────────────────────────────────────
 DEBUG_MODE = True # KEEP TRUE FOR YOUR FIRST COLAB TEST
@@ -64,8 +64,19 @@ def load_model():
         bias="none",
         task_type="CAUSAL_LM"
     )
-    model = get_peft_model(model, lora_config)
+    # The Fix: We load directly into the ValueHead wrapper, and TRL automatically 
+    # applies our 4-bit config and LoRA adapters perfectly.
+    model = AutoModelForCausalLMWithValueHead.from_pretrained(
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        quantization_config=bnb_config,
+        peft_config=lora_config,
+        device_map="cuda"
+    )
     
+    tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-1.5B-Instruct")
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+        
     return model, tokenizer
 
 def build_prompt(observation: dict, tokenizer) -> str:

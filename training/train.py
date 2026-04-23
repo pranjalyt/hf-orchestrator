@@ -140,23 +140,28 @@ def run_episode(model, tokenizer, env, chaos_enabled=False):
 def train_phase(model, tokenizer, trainer, env, phase_name, episodes, chaos_enabled, start_ep):
     print(f"\n{'='*40}\nSTARTING {phase_name} ({episodes} episodes)\n{'='*40}")
     
+    step_buffer = [] # NEW: Buffer to hold steps to satisfy exact PyTorch math
+
     for ep in range(episodes):
         episode_data, total_reward = run_episode(model, tokenizer, env, chaos_enabled)
+        step_buffer.extend(episode_data)
         
-        # Skip training if the episode broke immediately
-        if len(episode_data) > 0:
-            queries = [step["query"] for step in episode_data]
-            responses = [step["response"] for step in episode_data]
-            rewards = [step["reward"] for step in episode_data]
+        # The Magic: Only train when we have collected EXACTLY the batch size
+        while len(step_buffer) >= trainer.config.batch_size:
+            # Slice off a mathematically perfect batch
+            batch = step_buffer[:trainer.config.batch_size]
+            step_buffer = step_buffer[trainer.config.batch_size:]
             
-            # The Magic: PPO handles advantage estimation and backprop natively
+            queries = [step["query"] for step in batch]
+            responses = [step["response"] for step in batch]
+            rewards = [step["reward"] for step in batch]
+            
             trainer.step(queries, responses, rewards)
             
         global_ep = start_ep + ep
         wandb.log({"episode": global_ep, "episode_reward": total_reward, "phase": phase_name})
         print(f"Phase {phase_name} | Episode {global_ep} | Reward: {total_reward:.2f}")
 
-    # Save only the LoRA adapters
     os.makedirs(f"checkpoints/{phase_name}", exist_ok=True)
     model.save_pretrained(f"checkpoints/{phase_name}")
     tokenizer.save_pretrained(f"checkpoints/{phase_name}")
@@ -166,19 +171,18 @@ def main():
     setup_wandb()
     model, tokenizer = load_model()
     
-    # Configure PPO specifically for step-by-step logic
+    # FIXED MATH: batch_size(4) = mini_batch(1) * grad_acc(4)
     config = PPOConfig(
         learning_rate=1.41e-5,
-        batch_size=1,            # Process one step at a time
+        batch_size=4,
         mini_batch_size=1,
-        gradient_accumulation_steps=4, # Accumulate gradients to simulate larger batches safely
+        gradient_accumulation_steps=4,
     )
     trainer = PPOTrainer(config=config, model=model, tokenizer=tokenizer)
     
     from environment.env import HFOrchestratorEnv
     env = HFOrchestratorEnv()
     
-    # Run the Curriculum
     train_phase(model, tokenizer, trainer, env, "Phase1_Happy", PHASE_EPISODES[0], False, 0)
     train_phase(model, tokenizer, trainer, env, "Phase2_Hard", PHASE_EPISODES[1], False, PHASE_EPISODES[0])
     train_phase(model, tokenizer, trainer, env, "Phase3_Chaos", PHASE_EPISODES[2], True, PHASE_EPISODES[0]+PHASE_EPISODES[1])
